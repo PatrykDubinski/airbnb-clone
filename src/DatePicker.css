@@ -1,47 +1,55 @@
-.datePicker{
-    position: absolute;
-    top: 35px;
-    left: 25%;
-    width: 100vw;
+.datePicker {
+  position: absolute;
+  top: 35px;
+  left: 25%;
+  width: 100vw;
+  z-index: 2;
 }
 
-.datePicker > h2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 559px;
-    padding: 10px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 350px;
+.datePicker > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 559px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 350px;
 }
 
-.datePicker > input{
-    width: 539px;
-    padding: 20px;
-    position: absolute;
-    left: 0;
-    height: 30px;
-    top: 390px;
-    border: none;
+.datePicker > input {
+  width: 539px;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  top: 390px;
+  border: none;
 }
 
-.datePicker > input:focus{
-    outline-width: 0;
+.datePicker > input:focus {
+  outline-width: 0;
 }
 
-.datePicker > button{
-    position: absolute;
-    left: 0;
-    top: 450px;
-    text-transform: inherit !important;
-    background-color: #ff7779;
-    color: white;
-    width: 579px;
+.datePicker > button {
+  position: absolute;
+  left: 0;
+  top: 450px;
+  text-transform: inherit !important;
+  background-color: #ff7779;
+  color: white;
+  width: 579px;
 }
 
-.datePicker > button:hover{
-    color: #ff7779;
-    background-color: white;
+.datePicker > button:hover {
+  color: #ff7779;
+  background-color: white;
+}
+
+@media (max-width: 1000px) {
+  .datePicker {
+    left: 8%;
+    width: unset;
+  }
 }
